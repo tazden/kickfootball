@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    tools:context="com.huda.kickfoot.GameFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/ResultText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/hello_blank_fragment" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        tools:context=".Balance"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/balanceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:text="Az egyensúlyom"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/balanceRemBalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="a pénztárcám"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/balanceTitle"
+            app:layout_constraintTop_toBottomOf="@+id/balanceTitle" />
+
+        <TextView
+            android:id="@+id/balanceLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="404 KFLD"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/balanceRemBalText" />
+
+        <TextView
+            android:id="@+id/balanceEveryDayLifeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Az életemért"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/balanceRemBalText"
+            app:layout_constraintTop_toBottomOf="@+id/balanceRemBalText" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="64dp"
+            android:max="100"
+            android:progress="8"
+            android:scaleY="5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/balanceEveryDayLifeText"
+            app:layout_constraintTop_toBottomOf="@+id/balanceEveryDayLifeText" />
+
+        <TextView
+            android:id="@+id/balanceBalPercentLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8 %"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toEndOf="@+id/progressBar"
+            app:layout_constraintTop_toTopOf="@+id/progressBar" />
+
+        <TextView
+            android:id="@+id/balanceEveryDayLifeBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="16sp"
+            android:text="123 456 KFLD"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+        <Button
+            android:id="@+id/placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="500dp"
+            android:text="Helyőrző használhatatlan gomb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

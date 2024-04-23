@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/start"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.SpaceShooter.FullscreenContainer"
+    tools:context="com.huda.kickfoot.GoFragment">
+
+
+
+
+    <ImageView
+        android:id="@+id/play_button"
+        android:layout_width="213dp"
+        android:layout_height="179dp"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="center"
+        android:contentDescription="@string/play_button"
+        android:focusable="true"
+        android:src="@drawable/btn" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txt_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="242dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

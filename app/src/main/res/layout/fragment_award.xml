@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    tools:context="com.huda.kickfoot.GameFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="201dp"
+        android:layout_height="358dp"
+        android:src="@drawable/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <VideoView
+                android:id="@+id/videoView1"
+                android:layout_width="150dp"
+                android:layout_height="280dp"/>
+
+            <VideoView
+                android:id="@+id/videoView2"
+                android:layout_width="150dp"
+                android:layout_height="280dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/videoView1" />
+
+            <VideoView
+                android:id="@+id/videoView3"
+                android:layout_width="150dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/play1"/>
+
+            <VideoView
+                android:id="@+id/videoView4"
+                android:layout_width="150dp"
+                android:layout_height="280dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/play2"
+                android:layout_toEndOf="@+id/videoView3" />
+
+            <VideoView
+                android:id="@+id/videoView5"
+                android:layout_width="150dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/play3"/>
+
+            <TextView
+                android:id="@+id/judul1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/videoView1"
+                android:gravity="center"
+                android:text="Jab Strike Knee"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/judul2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/videoView2"
+                android:layout_toEndOf="@+id/judul1"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Jab Strike Low Kick"/>
+
+            <TextView
+                android:id="@+id/judul3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/videoView3"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Jab Strike Middle Kick"/>
+
+            <TextView
+                android:id="@+id/judul4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/videoView4"
+                android:layout_toEndOf="@+id/judul3"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Jab Strike Push Kick"/>
+
+            <TextView
+                android:id="@+id/judul5"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/videoView5"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Jab Strike Spinning Fist"/>
+
+            <Button
+                android:id="@+id/play1"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/judul1"
+                android:text="Play"
+                android:visibility="visible" />
+            <Button
+                android:id="@+id/play2"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/judul1"
+                android:layout_toEndOf="@+id/videoView1"
+                android:layout_marginStart="20dp"
+                android:text="Play"
+                android:visibility="visible" />
+            <Button
+                android:id="@+id/play3"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/judul3"
+                android:text="Play"
+                android:visibility="visible" />
+            <Button
+                android:id="@+id/play4"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/judul3"
+                android:layout_toEndOf="@+id/videoView1"
+                android:layout_marginStart="20dp"
+                android:text="Play"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/play5"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/judul5"
+                android:text="Play"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
